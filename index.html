@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
+  <script type="text/javascript" src="scripts/jquery.min.js"></script>
 
   <style type="text/css">
     body {
@@ -14,9 +15,9 @@
     }
 
     img {
-    border: 1px solid black;
-    height: 300px;
-    width: 500px;
+      border: 1px solid black;
+      height: 300px;
+      width: 500px;
     }
 
     #active_label {
@@ -24,12 +25,12 @@
     }
 
     .response  {
-    height: 25px;
-    width: 25px;
-    border: none;
-    padding-top: 5px;
-    margin-left: 10px;
-    display: none;
+      height: 25px;
+      width: 25px;
+      border: none;
+      padding-top: 5px;
+      margin-left: 10px;
+      display: none;
     }
 
     #submitBtn {
@@ -42,45 +43,38 @@
     }
 
   </style>
-  <script type="text/javascript" src="jquery.min.js"></script>
+
 </head>
 
 <body>
   <h2>Medicare Insurance Information 1</h2>
   <section id="medicareImage">
-    <img src="tagging_medicare_1.bmp" 
+    <img src="images/tagging_medicare_1.bmp" 
     alt="Medicare Eligibility" id="medicareTagging">
   </section>
   <br>
-  <form>
+  <form name="medicare_tagging">
 
     <label>1. Is this plan <b>Active</b>?</label>
     <label for="active" id="active_label">Yes</label>
     <input id="active_yes" type="radio" name="active" value="Yes">
     <label for="active_no">No</label>
     <input id="active_no" type="radio" name="active" value="No">
-    <img class="response" id="a_correct" src="correct.png">
-    <img class="response" id="a_incorrect" src="incorrect.png">
     <br>
     <br>
 
     <label for="subscriber">2. Who is the <b>Subscriber</b> to the plan?</label>
     <input id="sub" type="text" name="subscriber">
-    <img class="response" id="b_correct" src="correct.png">
-    <img class="response" id="b_incorrect" src="incorrect.png">
     <br>
     <br>
 
     <label for="Effective Date">3. What is the <b>Effective Date</b> of the plan?</label>
     <select id="effective" name="Effective Date">
-      <option value="1">12/25/1900</option>
-      <option value="2">08/01/2012</option>
-      <option value="3">01/01/2015</option>
-      <option value="4">12/31/2015</option>
+      <option name="effective" value="1">12/25/1900</option>
+      <option name="effective" value="2">08/01/2012</option>
+      <option name="effective" value="3">01/01/2015</option>
+      <option name="effective" value="4">12/31/2015</option>
     </select>
-    <img class="response" id="c_correct" src="correct.png">
-    <img class="response" id="c_incorrect" src="incorrect.png">
-
     <br>
     <br>
 
@@ -96,6 +90,18 @@
 </body>
 
 <script type="text/javascript">
+  
+  var errorMessage = "";
+
+  $("#submitBtn").submit(function(event){
+
+    var errorMessage = "";
+    event.preventDefault();
+
+    
+
+    });
+
 
   
 </script>
