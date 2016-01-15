@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Benefits Sheet</title>
+
+</head>
+<body>
+<form id="benefits">
+	<table>
+		<tr id="rep_name">
+			<td>Representative Name (w/last init)</td>
+			<td>Verified By</td>
+			<td>Date Verified</td>
+		</tr>
+
+		<tr id="rep_name_input">
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+		</tr>
+
+		<tr id="patient">
+			<td>Patient</td>
+		</tr>
+		
+		<tr id="patient_demo">
+			<td>Last Name</td>
+			<td>First Name</td>
+			<td>D.O.B.</td>
+			<td>Social Security #</td>
+		</tr>
+
+		<tr id="patient_demo_input">
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+		</tr>
+
+		<tr id="self_funded">
+			<td>Self Funded</td>
+			<td>Employer Name</td>
+			<td>Address</td>
+		</tr>
+
+		<tr id="self_funded_input">
+			<td>
+				<select>
+					<option></option>
+					<option>Yes</option>
+					<option>No</option>
+				</select>
+			</td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+		</tr>
+			
+		<tr id="tiered">
+			<td>Tiered Plan</td>
+			<td>First Level</td>
+			<td>Second Level</td>
+			<td>OON</td>
+			<td>Level We Are Par</td>
+		</tr>
+
+		<tr id="tiered_input">
+			<td>
+				<select>
+					<option></option>
+					<option>Yes</option>
+					<option>No</option>
+				</select>
+			</td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td>
+				<select>
+					<option></option>
+					<option>First</option>
+					<option>Second</option>
+					<option>OON</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr id="primary">
+			<td>Primary Insurance</td>
+		</tr>
+		<tr id="primary_insurance">
+			<td>Primary Insurance</td>
+			<td>Phone #</td>
+			<td>Plan Type</td>
+		</tr>
+
+		<tr id="primary_insurance_input">
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td>
+				<select>
+					<option></option>
+					<option>HMO</option>
+					<option>PPO</option>
+					<option>POS</option>
+					<option>EPO</option>
+					<option>Indemnity</option>
+					<option>Other</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr id="member_id">				
+			<td>Member ID Number</td>
+			<td>Group Number</td>
+			<td>Effective Date</td>
+			<td>Coding Discussion</td>
+		</tr>
+
+		<tr id="member_id_input">
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td>
+				<select>
+					<option></option>
+					<option>None</option>
+					<option>not needed per rep</option>
+					<option>93228 / 93229</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr id="guarantor">
+			<td>Guarantor</td>
+			<td>Last Name</td>
+			<td>First Name</td>
+			<td>D.O.B.</td>
+			<td>Relationship</td>
+		</tr>
+
+		<tr id="guarantor_input">
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+		</tr>
+
+		<tr id="claims_address">
+			<td>Primary Claims Address</td>
+		</tr>
+
+		<tr id="claims_address_input">
+			<td><input type="text"></td>
+		</tr>
+
+		<tr id="in_net_ben">
+			<td>In Net Ben</td>
+			<td>Deductible</td>
+			<td>Met</td>
+			<td>Amt Met</td>
+			<td>Copay</td>
+			<td>Out of Pocket</td>
+			<td>Met</td>
+			<td>Amt Met</td>
+		</tr>
+
+		<tr id="in_net_ben_input">
+			<td>
+				<select>
+					<option></option>
+					<option>None</option>
+					<option>100</option>
+					<option>95/5</option>
+					<option>90/10</option>
+					<option>85/15</option>
+					<option>80/20</option>
+					<option>75/25</option>
+					<option>70/30</option>
+					<option>60/40</option>
+					<option>50/50</option>
+				</select>
+			</td>
+			<td><input type="text"></td>
+			<td>
+				<select>
+					<option></option>
+					<option>Yes</option>
+					<option>No</option>
+				</select>
+			</td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td>
+				<select>
+					<option></option>
+					<option>Yes</option>
+					<option>No</option>
+				</select>
+			</td>
+			<td><input type="text"></td>
+		</tr>
+
+		<tr id="out_net_ben">
+			<td>Out Net Ben</td>
+			<td>Deductible</td>
+			<td>Met</td>
+			<td>Amt Met</td>
+			<td>Copay</td>
+			<td>Out of Pocket</td>
+			<td>Met</td>
+			<td>Amt Met</td>
+		</tr>
+
+		<tr id="out_net_ben_input">
+			<td>
+				<select>
+					<option></option>
+					<option>None</option>
+					<option>100</option>
+					<option>95/5</option>
+					<option>90/10</option>
+					<option>85/15</option>
+					<option>80/20</option>
+					<option>75/25</option>
+					<option>70/30</option>
+					<option>60/40</option>
+					<option>50/50</option>
+				</select>
+			</td>
+			<td><input type="text"></td>
+			<td>
+				<select>
+					<option></option>
+					<option>Yes</option>
+					<option>No</option>
+				</select>
+			</td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td>
+				<select>
+					<option></option>
+					<option>Yes</option>
+					<option>No</option>
+				</select>
+			</td>
+			<td><input type="text"></td>
+		</tr>
+
+		<tr id="network_questions">
+			<td>Network Questions</td>
+			<td>Network Name</td>
+			<td>Who is Re-pricing</td>
+			<td>Who is Paying</td>
+			<td>Auth Required</td>
+			<td>Auth Phone #</td>
+		</tr>
+
+		<tr id="network_questions_input">
+			<td>
+				<select>
+					<option></option>
+					<option>Yes</option>
+					<option>No</option>
+				</select>
+			</td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td>
+				<select>
+					<option></option>
+					<option>Yes</option>
+					<option>No</option>
+				</select>
+			</td>
+			<td><input type="text"></td>
+		</tr>
+
+		<tr id="secondary">
+			<td>Secondary Insurance
+				<input type="radio"> Yes
+				<input type="radio"> No
+			</td>
+		</tr>
+
+		<tr id="secondary_insurance">
+			<td>Secondary Insurance</td>
+			<td>Phone #</td>
+			<td>Plan Type</td>
+		</tr>
+
+		<tr id="secondary_insurance_input">
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td>
+				<select>
+					<option></option>
+					<option>HMO</option>
+					<option>PPO</option>
+					<option>POS</option>
+					<option>EPO</option>
+					<option>Indemnity</option>
+					<option>Other</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr id="member_id_secondary">				
+			<td>Member ID Number</td>
+			<td>Group Number</td>
+			<td>Effective Date</td>
+			<td>Coding Discussion</td>
+		</tr>
+
+		<tr id="member_id_input_secondary">
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td><input type="text"></td>
+			<td>
+				<select>
+					<option></option>
+					<option>None</option>
+					<option>not needed per rep</option>
+					<option>93228 / 93229</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr id="claims_address_secondary">
+			<td>Secondary Claims Address</td>
+		</tr>
+
+		<tr id="claims_address_input_secondary">
+			<td><input type="text"></td>
+		</tr>
+
+		<tr id="notes">
+			<td>Notes</td>
+		</tr>
+	</table>	
+
+	<textarea form="benefits" rows="4" cols="100"></textarea>
+
+</form>
+</body>
+</html>
